@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>비속어 필터 채팅</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #chat-box { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+    input, button { padding: 8px; margin: 2px; }
+  </style>
+</head>
+<body>
+  <h2>🗣️ 실시간 채팅 (욕설 필터 적용)</h2>
+  <div id="chat-box"></div>
+  <input type="text" id="username" placeholder="닉네임 입력" />
+  <input type="text" id="message" placeholder="메시지 입력" />
+  <button onclick="sendMessage()">전송</button>
+
+  <!-- Firebase v8 SDK 불러오기 (CDN 방식) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
